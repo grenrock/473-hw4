@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>payment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body class="container">
+  <h2>Payment information</h2>
+  <section>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <form data-coffee-order="form">
+          <div class="radio">
+            <label>
+                  <input type="radio" name="prefix" value="mister">
+                  Mister
+                </label>
+          </div>
+          <div class="radio">
+            <label>
+                  <input type="radio" name="prefix" value="miss" checked>
+                  Miss
+                </label>
+          </div>
+          <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input class="form-control" type="name" name="customerName" id="name" value="">
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input class="form-control" type="email" name="emailAddress" id="emailInput" value="" placeholder="dr@who.com">
+          </div>
+          <div class="form-group">
+            <label for="creditCard">Credit Card</label>
+            <select id="creditCard" class="form-control" name="creditCard">
+                  <option value="">None</option>
+                  <option value="visa">Visa</option>
+                  <option value="masterCard">Master Card</option>
+                  <option value="americanExpress">American Express</option>
+                </select>
+          </div>
+          <div class="form-group">
+            <label for="cardNumber">Card Number</label>
+            <input class="form-control" type="creditCard" name="card" id="cardNumber" value="">
+          </div>
+          <div class="form-group">
+            <label for="expiration">Expiration Date</label>
+            <input class="form-control" type="expiration" name="expDate" id="expiration" value="">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="reset" class="btn btn-default">Reset</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+  <script src="scripts/formhandler.js" charset="utf-8"></script>
+  <script src="scripts/datastore.js" charset="utf-8"></script>
+  <script src="scripts/truck.js" charset="utf-8"></script>
+  <script src="scripts/paymentmain.js" charset="utf-8"></script>
+</body>
+
+</html>
